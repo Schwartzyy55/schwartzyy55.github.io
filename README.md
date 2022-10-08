@@ -1,4 +1,4 @@
-# [coryschwartz.net](https://schwartzyy55.github.io)
+# [CorySchwartz.net](https://schwartzyy55.github.io)
 
 - Webflow increased their prices
 - I am a low code developer
