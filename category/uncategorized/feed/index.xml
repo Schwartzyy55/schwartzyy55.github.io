@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Uncategorized &#8211; Cory Schwartz</title>
-	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://coryschwartz.net/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>https://coryschwartz.net/</link>
 	<description></description>
 	<lastBuildDate>Wed, 07 Dec 2022 01:31:12 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,12 +21,12 @@
 	<generator>https://wordpress.org/?v=6.1.1</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>/hello-world/</link>
+		<link>https://coryschwartz.net/hello-world/</link>
 		
 		<dc:creator><![CDATA[Cory Schwartz]]></dc:creator>
 		<pubDate>Sun, 04 Dec 2022 21:45:21 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=1</guid>
+		<guid isPermaLink="false">https://coryschwartz.net/?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[
