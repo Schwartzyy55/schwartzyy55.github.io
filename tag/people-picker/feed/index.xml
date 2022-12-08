@@ -11,7 +11,7 @@
 	<title>People-Picker &#8211; Cory Schwartz</title>
 	<atom:link href="https://coryschwartz.net/tag/people-picker/feed/" rel="self" type="application/rss+xml" />
 	<link>https://coryschwartz.net/</link>
-	<description></description>
+	<description>My website, my words, my story.</description>
 	<lastBuildDate>Wed, 07 Dec 2022 01:31:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
@@ -19,6 +19,14 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>https://coryschwartz.net/wp-content/uploads/2022/12/cropped-Cory-Logo-Dark-32x32.png</url>
+	<title>People-Picker &#8211; Cory Schwartz</title>
+	<link>https://coryschwartz.net/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 	<item>
 		<title>Power Apps Custom Multi-People-Picker List</title>
 		<link>https://coryschwartz.net/power-apps-custom-multi-people-picker-list/</link>
