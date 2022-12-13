@@ -12,7 +12,7 @@
 	<atom:link href="https://coryschwartz.net/feed/" rel="self" type="application/rss+xml" />
 	<link>https://coryschwartz.net/</link>
 	<description>My website, my words, my story.</description>
-	<lastBuildDate>Wed, 07 Dec 2022 01:31:12 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 13 Dec 2022 00:52:27 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -39,8 +39,183 @@
 		<category><![CDATA[SharePoint]]></category>
 		<guid isPermaLink="false">https://coryschwartz.net/?p=58</guid>
 
-					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[]]></content:encoded>
+					<description><![CDATA[I recently had a use case for a people picker column in a form that users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant. The problem? The user can select [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>I recently had a use case for a people picker column in a form that  users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="160" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-1024x160.png" alt="" class="wp-image-89" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/image-1024x160.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/image-300x47.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/image-768x120.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/image.png 1090w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Screenshot from SharePoint List people-picker column with me selected</figcaption></figure>
+
+
+
+<p>The problem? The user can select any person they like for the approving manager, director, and VP. Aka themselves. The known method to fix this is by <a href="https://sharepointmaven.com/how-to-limit-the-selection-of-choices-in-a-people-column/" target="_blank" rel="noreferrer noopener">limiting the options from the SharePoint List Settings</a>. However, this isn&#8217;t the easiest method for our HR members who I want to be able to manage this without IT assistance. So how can we make this easier?</p>
+
+
+
+<p><strong>By limiting these options through a filter in a Power Apps form.</strong></p>
+
+
+
+<p>I build Power App Forms that connects to this SharePoint List, so for the rest of this post, I will refer to this SharePoint List from the Power Apps Form side, which a people-picker looks like:<br></p>
+
+
+
+<figure class="wp-block-image size-full is-resized"><img decoding="async" loading="lazy" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1.png" alt="" class="wp-image-91" width="308" height="270" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1.png 632w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1-300x263.png 300w" sizes="(max-width: 308px) 100vw, 308px" /></figure>
+
+
+
+<p>As you can see, by searching my last name, many options come up. How can we limit this in Power Apps in a manageable way by our non-IT members?</p>
+
+
+
+<p>My first method was by using a collection from within the power app itself. After a while of learning the difference between Collect/ClearCollect in the PowerApp App.OnStart property, I realized was not a good solution for our non-IT members.</p>
+
+
+
+<p>The best solution to this I believe, is through another Sharepoint list. Non-IT members can easily go to a sharepoint list and add/remove a person from the people picker column. Best of all, it updates the power app form instantly without having to move it out of the Production Environment. So how is this possible?</p>
+
+
+
+<p>Step 1. Create a new SharePoint list of the members you need. We will call this &#8220;Email Recipients List&#8221; so it doesn&#8217;t get too confusing with the SharePoint list we are originally working on.<br>For me, I have a master list of all forms that require approvals. So my Email Recipient List looks like the following (replace red bricks with people):</p>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img decoding="async" loading="lazy" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1024x97.png" alt="" class="wp-image-92" width="631" height="59" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1024x97.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-300x28.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-768x72.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1536x145.png 1536w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-2048x193.png 2048w" sizes="(max-width: 631px) 100vw, 631px" /></figure>
+
+
+
+<p>Now we need to use this list of Managers, Directors, VPs from ID=1 to filter my people picker for my original SharePoint List. To do this, is actually really simple! </p>
+
+
+
+<p>Step 2. Open the Power Apps App you created that your form exists in and go to the App.OnStart property. Here, we are going to create a list which will contain the people we selected in the Email Recipient List.</p>
+
+
+
+<pre class="wp-block-code"><code>Concurrent(
+    Clear(AllManagers);
+    ForAll(
+        Filter(
+            'Email Recipient List',
+            ID = 1
+        ).Managers,
+        Collect(
+            AllManagers,
+            Managers
+        )
+    ),
+    Clear(AllDirectors);
+    ForAll(
+        Filter(
+            'Email Recipient List',
+            ID = 1
+        ).Directors,
+        Collect(
+            AllDirectors,
+            Directors
+        )
+    ),
+    Clear(AllVPs);
+    ForAll(
+        Filter(
+            'Email Recipient List',
+            ID = 1
+        ).VPs,
+        Collect(
+            AllVPs,
+            VPs
+        )
+    );
+    
+)</code></pre>
+
+
+
+<p>Lets break down this code</p>
+
+
+
+<ul>
+<li>Concurrent()
+<ul>
+<li>This speeds up your app load by running all of these functions at the same time and not concurrently.</li>
+</ul>
+</li>
+
+
+
+<li>Clear(collectionList)
+<ul>
+<li>You are not allowed to use the ForAll inside a ClearCollect function, so a workaround is just by calling it here. This makes sure whenever the app is loaded again, the collection list will be wiped, or cleared.</li>
+</ul>
+</li>
+
+
+
+<li>ForAll()
+<ul>
+<li>This will go through each record in the Email Recipient list. Because each person you select in the Email Recipient List is not just a name, <a href="https://powerusers.microsoft.com/t5/Building-Power-Apps/Submiting-form-with-people-picker-not-updating-in-SharePoint/m-p/844359/highlight/true#M268470" target="_blank" rel="noreferrer noopener">its actually a small JSON code which selects the email that looks like this.</a></li>
+</ul>
+</li>
+
+
+
+<li>Filter().columnName
+<ul>
+<li>While we are running our ForAll function, we only want to run it on our Email Recipient List where ID = 1. Once you&#8217;ve done that, you add a period and type the column to filter it some more. This .columName allows us to select only the Manager, Director, or VP columns.</li>
+</ul>
+</li>
+
+
+
+<li>Collect(collectionName, columnName)
+<ul>
+<li>Now, we want to create a local collection in PowerApps where this new list will exist. Note, give it a different name then your column name from the Email Recipient List, because Power Apps will mix the two up. I just added &#8220;All&#8221; to the prefix of the collectionName.</li>
+
+
+
+<li>The coumnName is required here, because the first parameter creates an empty collection. The second parameter is where we get the data to fill the collection we just created. <br></li>
+</ul>
+</li>
+</ul>
+
+
+
+<p>Step 3. Run the App.OnStart, and check your app&#8217;s collections. You should get something like this.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="698" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-1024x698.png" alt="" class="wp-image-93" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-1024x698.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-300x205.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-768x524.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM.png 1135w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Power Apps Collection labeled AllManagers</figcaption></figure>
+
+
+
+<p>Phew, we are almost done! Remember when I said this was an easy process, I swear the next step is quick!</p>
+
+
+
+<p>Step 4. Go to the Power Apps <strong>DataCardValue</strong>.<strong>Items</strong> property. What ever is there currently, clear it, and set it to your newly created collection list.<br></p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="142" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1024x142.png" alt="" class="wp-image-94" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1024x142.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-300x42.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-768x107.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1536x214.png 1536w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-2048x285.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Setting Manager DataCardValue.Items property to AllManagers</figcaption></figure>
+
+
+
+<p>Pro Tip: You most likely want to sort this by A-to-Z, so we can achieve this by tweaking the Items function above slightly:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="35" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1024x35.png" alt="" class="wp-image-95" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1024x35.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-300x10.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-768x26.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1536x52.png 1536w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-2048x70.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Sort the list by their display name from A-to-Z</figcaption></figure>
+
+
+
+<p>Step 5. All Done! Now when you click the dropdown, it will display the list of managers we picked.</p>
+
+
+
+<p>Now if a manager leaves the company, Non-IT members can update it on their own by simply changing the master list (aka Email Recipient List). Or better yet, you find a way to automate it.</p>
+]]></content:encoded>
 					
 		
 		
