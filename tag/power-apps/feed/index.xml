@@ -8,7 +8,7 @@
 	>
 
 <channel>
-	<title>Power Apps &#8211; Cory Schwartz</title>
+	<title>Cory Schwartz - My website, my words, my story.</title>
 	<atom:link href="https://coryschwartz.net/tag/power-apps/feed/" rel="self" type="application/rss+xml" />
 	<link>https://coryschwartz.net/</link>
 	<description>My website, my words, my story.</description>
@@ -22,7 +22,7 @@
 
 <image>
 	<url>https://coryschwartz.net/wp-content/uploads/2022/12/cropped-Cory-Logo-Dark-32x32.png</url>
-	<title>Power Apps &#8211; Cory Schwartz</title>
+	<title>Cory Schwartz - My website, my words, my story.</title>
 	<link>https://coryschwartz.net/</link>
 	<width>32</width>
 	<height>32</height>
@@ -39,7 +39,9 @@
 		<category><![CDATA[SharePoint]]></category>
 		<guid isPermaLink="false">https://coryschwartz.net/?p=58</guid>
 
-					<description><![CDATA[I recently had a use case for a people picker column in a form that users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant. The problem? The user can select [&#8230;]]]></description>
+					<description><![CDATA[<p>I recently had a use case for a people picker column in a form that users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant. The problem? The user can select [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://coryschwartz.net/power-apps-custom-multi-people-picker-list/">Power Apps Custom Multi-People-Picker List</a> appeared first on <a rel="nofollow" href="https://coryschwartz.net/">Cory Schwartz</a>.</p>
+]]></description>
 										<content:encoded><![CDATA[
 <p>I recently had a use case for a people picker column in a form that  users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant.</p>
 
@@ -219,6 +221,7 @@
 
 
 <p><a href="https://www.linkedin.com/pulse/power-apps-custom-multi-people-picker-list-cory-schwartz" data-type="URL" data-id="https://www.linkedin.com/pulse/power-apps-custom-multi-people-picker-list-cory-schwartz" target="_blank" rel="noreferrer noopener">Comment on this post with your thoughts and comments by visiting the LinkedIn link here!</a><br></p>
+<p>The post <a rel="nofollow" href="https://coryschwartz.net/power-apps-custom-multi-people-picker-list/">Power Apps Custom Multi-People-Picker List</a> appeared first on <a rel="nofollow" href="https://coryschwartz.net/">Cory Schwartz</a>.</p>
 ]]></content:encoded>
 					
 		
