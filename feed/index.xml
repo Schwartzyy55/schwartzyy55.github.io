@@ -224,22 +224,5 @@
 		
 		
 			</item>
-		<item>
-		<title>Hello world!</title>
-		<link>https://coryschwartz.net/hello-world/</link>
-		
-		<dc:creator><![CDATA[Cory Schwartz]]></dc:creator>
-		<pubDate>Sun, 04 Dec 2022 21:45:21 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">https://coryschwartz.net/?p=1</guid>
-
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
-										<content:encoded><![CDATA[
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-]]></content:encoded>
-					
-		
-		
-			</item>
 	</channel>
 </rss>
