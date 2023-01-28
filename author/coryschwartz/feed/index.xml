@@ -8,9 +8,9 @@
 	>
 
 <channel>
-	<title>Power Apps Archives - Cory Schwartz</title>
-	<atom:link href="https://coryschwartz.net/tag/power-apps/feed/" rel="self" type="application/rss+xml" />
-	<link>https://coryschwartz.net/tag/power-apps/</link>
+	<title>Cory Schwartz, Author at Cory Schwartz</title>
+	<atom:link href="https://coryschwartz.net/author/coryschwartz/feed/" rel="self" type="application/rss+xml" />
+	<link>https://coryschwartz.net/author/coryschwartz/</link>
 	<description>My website, my words, my story.</description>
 	<lastBuildDate>Tue, 13 Dec 2022 01:12:38 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -22,8 +22,8 @@
 
 <image>
 	<url>https://coryschwartz.net/wp-content/uploads/2022/12/cropped-Cory-Logo-Dark-32x32.png</url>
-	<title>Power Apps Archives - Cory Schwartz</title>
-	<link>https://coryschwartz.net/tag/power-apps/</link>
+	<title>Cory Schwartz, Author at Cory Schwartz</title>
+	<link>https://coryschwartz.net/author/coryschwartz/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
