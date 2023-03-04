@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>Cory Schwartz</title>
-	<atom:link href="https://coryschwartz.net/feed/" rel="self" type="application/rss+xml" />
-	<link>https://coryschwartz.net/</link>
-	<description>My website, my words, my story.</description>
-	<lastBuildDate>Tue, 13 Dec 2022 01:12:38 +0000</lastBuildDate>
+	<title>cory schwartz</title>
+	<atom:link href="http://coryschwartz.net/feed/" rel="self" type="application/rss+xml" />
+	<link>http://coryschwartz.net/</link>
+	<description></description>
+	<lastBuildDate>Sat, 04 Mar 2023 19:45:38 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,37 +21,57 @@
 	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
-	<url>https://coryschwartz.net/wp-content/uploads/2022/12/cropped-Cory-Logo-Dark-32x32.png</url>
-	<title>Cory Schwartz</title>
-	<link>https://coryschwartz.net/</link>
+	<url>http://coryschwartz.net/wp-content/uploads/2023/02/512x512-Primary-Logo-150x150.png</url>
+	<title>cory schwartz</title>
+	<link>http://coryschwartz.net/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
-		<title>Power Apps Custom Multi-People-Picker List</title>
-		<link>https://coryschwartz.net/power-apps-custom-multi-people-picker-list/</link>
+		<title>Day-to-Day Post</title>
+		<link>http://coryschwartz.net/hello-world/</link>
+					<comments>http://coryschwartz.net/hello-world/#respond</comments>
 		
-		<dc:creator><![CDATA[Cory Schwartz]]></dc:creator>
-		<pubDate>Wed, 07 Dec 2022 01:10:45 +0000</pubDate>
-				<category><![CDATA[Work]]></category>
-		<category><![CDATA[People-Picker]]></category>
-		<category><![CDATA[Power Apps]]></category>
-		<category><![CDATA[SharePoint]]></category>
-		<guid isPermaLink="false">https://coryschwartz.net/?p=58</guid>
+		<dc:creator><![CDATA[coryschwartz]]></dc:creator>
+		<pubDate>Sun, 12 Feb 2023 14:49:08 +0000</pubDate>
+				<category><![CDATA[Daily]]></category>
+		<guid isPermaLink="false">http://coryschwartz.net/?p=1</guid>
 
-					<description><![CDATA[<p>I recently had a use case for a people picker column in a form that users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant. The problem? The user can select [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://coryschwartz.net/power-apps-custom-multi-people-picker-list/">Power Apps Custom Multi-People-Picker List</a> appeared first on <a rel="nofollow" href="https://coryschwartz.net/">Cory Schwartz</a>.</p>
-]]></description>
+					<description><![CDATA[More to come here soon]]></description>
 										<content:encoded><![CDATA[
-<p>I recently had a use case for a people picker column in a form that  users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant.</p>
+<p>More to come here soon</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://coryschwartz.net/hello-world/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to filter a Power Apps Multi-People-Picker Column Using a SharePoint List</title>
+		<link>http://coryschwartz.net/how-to-filter-a-power-apps-multi-people-picker-column-using-a-sharepoint-list/</link>
+					<comments>http://coryschwartz.net/how-to-filter-a-power-apps-multi-people-picker-column-using-a-sharepoint-list/#respond</comments>
+		
+		<dc:creator><![CDATA[coryschwartz]]></dc:creator>
+		<pubDate>Wed, 07 Dec 2022 19:09:00 +0000</pubDate>
+				<category><![CDATA[Guides]]></category>
+		<category><![CDATA[People Picker Column]]></category>
+		<category><![CDATA[Power Apps]]></category>
+		<category><![CDATA[SharePoint List]]></category>
+		<guid isPermaLink="false">http://coryschwartz.net/?p=263</guid>
+
+					<description><![CDATA[How to filter a Power Apps Multi-People-Picker Column Using a SharePoint List]]></description>
+										<content:encoded><![CDATA[
+<div class="is-layout-constrained wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
+<p>I recently had a use case for a people picker column in a form that users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant.</p>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="160" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-1024x160.png" alt="" class="wp-image-89" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/image-1024x160.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/image-300x47.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/image-768x120.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/image.png 1090w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Screenshot from SharePoint List people-picker column with me selected</figcaption></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-1024x160.png" alt="" class="wp-image-89"/><figcaption class="wp-element-caption">Screenshot from SharePoint List people-picker column with me selected</figcaption></figure>
 
 
 
-<p>The problem? The user can select any person they like for the approving manager, director, and VP. Aka themselves. The known method to fix this is by <a href="https://sharepointmaven.com/how-to-limit-the-selection-of-choices-in-a-people-column/" target="_blank" rel="noreferrer noopener">limiting the options from the SharePoint List Settings</a>. However, this isn&#8217;t the easiest method for our HR members who I want to be able to manage this without IT assistance. So how can we make this easier?</p>
+<p>The problem? The user can select any person they like for the approving manager, director, and VP. Aka themselves. The known method to fix this is by&nbsp;<a href="https://sharepointmaven.com/how-to-limit-the-selection-of-choices-in-a-people-column/" target="_blank" rel="noreferrer noopener">limiting the options from the SharePoint List Settings</a>. However, this isn’t the easiest method for our HR members who I want to be able to manage this without IT assistance. So how can we make this easier?</p>
 
 
 
@@ -59,11 +79,11 @@
 
 
 
-<p>I build Power App Forms that connects to this SharePoint List, so for the rest of this post, I will refer to this SharePoint List from the Power Apps Form side, which a people-picker looks like:<br></p>
+<p>I build Power App Forms that connects to this SharePoint List, so for the rest of this post, I will refer to this SharePoint List from the Power Apps Form side, which a people-picker looks like:</p>
 
 
 
-<figure class="wp-block-image size-full is-resized"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1.png" alt="" class="wp-image-91" width="308" height="270" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1.png 632w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1-300x263.png 300w" sizes="(max-width: 308px) 100vw, 308px" /></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-6.54.35-PM-1.png" alt="" class="wp-image-91"/></figure>
 
 
 
@@ -79,15 +99,15 @@
 
 
 
-<p>Step 1. Create a new SharePoint list of the members you need. We will call this &#8220;Email Recipients List&#8221; so it doesn&#8217;t get too confusing with the SharePoint list we are originally working on.<br>For me, I have a master list of all forms that require approvals. So my Email Recipient List looks like the following (replace red bricks with people):</p>
+<p>Step 1. Create a new SharePoint list of the members you need. We will call this “Email Recipients List” so it doesn’t get too confusing with the SharePoint list we are originally working on.<br>For me, I have a master list of all forms that require approvals. So my Email Recipient List looks like the following (replace red bricks with people):</p>
 
 
 
-<figure class="wp-block-image size-large is-resized"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1024x97.png" alt="" class="wp-image-92" width="631" height="59" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1024x97.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-300x28.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-768x72.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1536x145.png 1536w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-2048x193.png 2048w" sizes="(max-width: 631px) 100vw, 631px" /></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-12-at-7.14.38-PM-1024x97.png" alt="" class="wp-image-92"/></figure>
 
 
 
-<p>Now we need to use this list of Managers, Directors, VPs from ID=1 to filter my people picker for my original SharePoint List. To do this, is actually really simple! </p>
+<p>Now we need to use this list of Managers, Directors, VPs from ID=1 to filter my people picker for my original SharePoint List. To do this, is actually really simple!</p>
 
 
 
@@ -157,7 +177,7 @@
 
 <li>ForAll()
 <ul>
-<li>This will go through each record in the Email Recipient list. Because each person you select in the Email Recipient List is not just a name, <a href="https://powerusers.microsoft.com/t5/Building-Power-Apps/Submiting-form-with-people-picker-not-updating-in-SharePoint/m-p/844359/highlight/true#M268470" target="_blank" rel="noreferrer noopener">its actually a small JSON code which selects the email that looks like this.</a></li>
+<li>This will go through each record in the Email Recipient list. Because each person you select in the Email Recipient List is not just a name,&nbsp;<a href="https://powerusers.microsoft.com/t5/Building-Power-Apps/Submiting-form-with-people-picker-not-updating-in-SharePoint/m-p/844359/highlight/true#M268470" target="_blank" rel="noreferrer noopener">its actually a small JSON code which selects the email that looks like this.</a></li>
 </ul>
 </li>
 
@@ -165,7 +185,7 @@
 
 <li>Filter().columnName
 <ul>
-<li>While we are running our ForAll function, we only want to run it on our Email Recipient List where ID = 1. Once you&#8217;ve done that, you add a period and type the column to filter it some more. This .columName allows us to select only the Manager, Director, or VP columns.</li>
+<li>While we are running our ForAll function, we only want to run it on our Email Recipient List where ID = 1. Once you’ve done that, you add a period and type the column to filter it some more. This .columName allows us to select only the Manager, Director, or VP columns.</li>
 </ul>
 </li>
 
@@ -173,22 +193,22 @@
 
 <li>Collect(collectionName, columnName)
 <ul>
-<li>Now, we want to create a local collection in PowerApps where this new list will exist. Note, give it a different name then your column name from the Email Recipient List, because Power Apps will mix the two up. I just added &#8220;All&#8221; to the prefix of the collectionName.</li>
+<li>Now, we want to create a local collection in PowerApps where this new list will exist. Note, give it a different name then your column name from the Email Recipient List, because Power Apps will mix the two up. I just added “All” to the prefix of the collectionName.</li>
 
 
 
-<li>The coumnName is required here, because the first parameter creates an empty collection. The second parameter is where we get the data to fill the collection we just created. <br></li>
+<li>The coumnName is required here, because the first parameter creates an empty collection. The second parameter is where we get the data to fill the collection we just created.</li>
 </ul>
 </li>
 </ul>
 
 
 
-<p>Step 3. Run the App.OnStart, and check your app&#8217;s collections. You should get something like this.</p>
+<p>Step 3. Run the App.OnStart, and check your app’s collections. You should get something like this.</p>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="698" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-1024x698.png" alt="" class="wp-image-93" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-1024x698.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-300x205.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-768x524.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM.png 1135w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Power Apps Collection labeled AllManagers</figcaption></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/Screenshot-2022-12-06-at-1.25.38-PM-1024x698.png" alt="" class="wp-image-93"/><figcaption class="wp-element-caption">Power Apps Collection labeled AllManagers</figcaption></figure>
 
 
 
@@ -196,11 +216,11 @@
 
 
 
-<p>Step 4. Go to the Power Apps <strong>DataCardValue</strong>.<strong>Items</strong> property. What ever is there currently, clear it, and set it to your newly created collection list.<br></p>
+<p>Step 4. Go to the Power Apps&nbsp;<strong>DataCardValue</strong>.<strong>Items</strong>&nbsp;property. What ever is there currently, clear it, and set it to your newly created collection list.</p>
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="142" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1024x142.png" alt="" class="wp-image-94" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1024x142.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-300x42.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-768x107.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1536x214.png 1536w, https://coryschwartz.net/wp-content/uploads/2022/12/image-1-2048x285.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Setting Manager DataCardValue.Items property to AllManagers</figcaption></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-1-1024x142.png" alt="" class="wp-image-94"/><figcaption class="wp-element-caption">Setting Manager DataCardValue.Items property to AllManagers</figcaption></figure>
 
 
 
@@ -208,7 +228,7 @@
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="35" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1024x35.png" alt="" class="wp-image-95" srcset="https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1024x35.png 1024w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-300x10.png 300w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-768x26.png 768w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1536x52.png 1536w, https://coryschwartz.net/wp-content/uploads/2022/12/image-2-2048x70.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Sort the list by their display name from A-to-Z</figcaption></figure>
+<figure class="wp-block-image"><img decoding="async" src="https://coryschwartz.net/wp-content/uploads/2022/12/image-2-1024x35.png" alt="" class="wp-image-95"/><figcaption class="wp-element-caption">Sort the list by their display name from A-to-Z</figcaption></figure>
 
 
 
@@ -217,13 +237,11 @@
 
 
 <p>Now if a manager leaves the company, Non-IT members can update it on their own by simply changing the master list (aka Email Recipient List). Or better yet, you find a way to automate it.</p>
-
-
-
-<p><a href="https://www.linkedin.com/pulse/power-apps-custom-multi-people-picker-list-cory-schwartz" data-type="URL" data-id="https://www.linkedin.com/pulse/power-apps-custom-multi-people-picker-list-cory-schwartz" target="_blank" rel="noreferrer noopener">Comment on this post with your thoughts and comments by visiting the LinkedIn link here!</a><br></p>
-<p>The post <a rel="nofollow" href="https://coryschwartz.net/power-apps-custom-multi-people-picker-list/">Power Apps Custom Multi-People-Picker List</a> appeared first on <a rel="nofollow" href="https://coryschwartz.net/">Cory Schwartz</a>.</p>
+</div>
 ]]></content:encoded>
 					
+					<wfw:commentRss>http://coryschwartz.net/how-to-filter-a-power-apps-multi-people-picker-column-using-a-sharepoint-list/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
 		
 		
 			</item>
