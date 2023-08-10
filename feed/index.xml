@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<generator>https://wordpress.org/?v=6.3</generator>
 
 <image>
 	<url>https://cory.schwartz.dev/wp-content/uploads/2023/02/512x512-Primary-Logo-150x150.png</url>
@@ -62,7 +62,7 @@
 
 					<description><![CDATA[How to filter a Power Apps Multi-People-Picker Column Using a SharePoint List]]></description>
 										<content:encoded><![CDATA[
-<div class="is-layout-constrained wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
+<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
 <p>I recently had a use case for a people picker column in a form that users can select specific managers, directors, and VPs for the approval workflow. In case you are unaware, a people-picker column is used in SharePoint Online Lists to select people in your company, or tenant.</p>
 
 
